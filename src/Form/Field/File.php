@@ -106,7 +106,7 @@ class File extends Field implements UploadFieldInterface
      */
     public function setRelation(array $options = [])
     {
-        $this->options['formData']['_relation'] = [$options['relation'], $options['key']];
+        $this->options['formData']['_relation'] = [$options['relation'], $options['key'] ?? null];
 
         return $this;
     }
